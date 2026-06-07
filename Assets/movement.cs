@@ -76,10 +76,15 @@ public class movement : MonoBehaviour
 
     foreach(Collider2D enemy in enemies)
     {
-        enemy.GetComponent<EnemyChase>()
-             .TakeDamage(attackDamage);
+        EnemyChase enemyScript =
+            enemy.GetComponentInParent<EnemyChase>();
+
+        if(enemyScript != null)
+        {
+            enemyScript.TakeDamage(attackDamage);
+        }
     }
-    }
+}
 
     private void OnDrawGizmosSelected()
 {
