@@ -78,15 +78,7 @@ A 2D top-down adventure game built with Unity and C#.
 * [ ] Enemy death animation
 * [ ] Boss battles
 
-## Screenshots
 
-### Gameplay
-
-Add screenshots here.
-
-```md
-![Gameplay Screenshot](Screenshots/gameplay.png)
-```
 
 ## Project Structure
 
